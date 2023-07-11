@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Product App</title>
+    <!-- Bootswatch Cosmo Theme -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="App.css" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">TodosComemosApp</a>
+    </nav>
+
+    <div class="container">
+      <!-- APPLICATION -->
+      <div id="App" class="row pt-5">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-header">
+              <h4>Agregar Receta</h4>
+            </div>
+            <form id="product-form" class="card-body" autocomplete="off">
+              <div class="form-group">
+                <label for="">Nombre</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Nombre de la receta"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="">Descripción</label>
+                <input
+                  type="text"
+                  id="description"
+                  placeholder="Descripción"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="">Medida</label>
+                <input
+                  type="text"
+                  id="measur"
+                  placeholder="Measur"
+                  class="form-control"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="medida">Unidades de Medidas</label>
+                <select id="measur-list" class="form-control">
+                  
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="">Cocina</label>
+                <select id="kitchen-list" class="form-control">
+                  
+                </select>
+              </div>
+              
+              <input
+                type="submit"
+                value="Publicar Receta"
+                class="btn btn-primary btn-block"
+              />
+            </form>
+          </div>
+        </div>
+
+        <div id="recipe-list" class="col-md-8"></div>
+      </div>
+
+
+
+
+      <div class="card card-body w-100 mt-5" id="recipe-details">
+        
+
+      </div>
+
+    </div>
+
+    
+
+    <script src="App.js" type="module"></script>
+  </body>
+</html>
